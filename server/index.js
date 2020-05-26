@@ -111,6 +111,9 @@ app.get("/api/user/logout",auth,(req,res)=>{
   })
 })
 
+app.get("/",(req,res)=>{
+  res.send({message:"homepage"})
+})
 
 console.log("try");
 const PORT = process.env.PORT || 5000
